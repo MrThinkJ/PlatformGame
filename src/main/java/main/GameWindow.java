@@ -9,11 +9,12 @@ public class GameWindow {
 
         jframe = new JFrame();
 
-        jframe.setSize(400, 400);
         jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jframe.add(gamePanel);
         // Set the window in center of screen
+        jframe.pack();
         jframe.setLocationRelativeTo(null);
+        jframe.setResizable(false);
         jframe.setVisible(true);
     }
 
